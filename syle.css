@@ -1,80 +1,98 @@
+/* Pastel Pink & White Aesthetic */
+/* Soft, intimate, gentle */
+
 body {
-    background: linear-gradient(135deg, #f7e9e3 0%, #d6c7b9 100%);
-    font-family: 'Georgia', serif;
-    color: #3a2c1a;
+    background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+    color: #4a3a40;
+    font-family: "Georgia", serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 700px;
-    margin: 40px auto;
-    background: rgba(255,255,255,0.85);
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(80, 60, 40, 0.15);
-    padding: 32px 28px;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 32px;
+    max-width: 750px;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(255, 182, 193, 0.3);
 }
 
 h1 {
-    font-size: 2.6em;
-    margin-bottom: 0.2em;
-    letter-spacing: 0.04em;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    color: #7c6a58;
-    margin-bottom: 0.8em;
-}
-
-.personal-story {
-    margin-bottom: 28px;
-    border-left: 4px solid #c2a98a;
-    padding-left: 18px;
-    background: #f9f6f3;
-    border-radius: 8px;
-}
-
-.appreciation {
-    margin-bottom: 28px;
-}
-
-.appreciation ul {
-    list-style: none;
-    padding: 0;
-}
-
-.appreciation li {
-    background: #e6d9c7;
-    margin: 8px 0;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-size: 1.08em;
-    box-shadow: 0 1px 4px rgba(120, 100, 80, 0.07);
-}
-
-footer {
     text-align: center;
-    font-size: 0.98em;
-    color: #7c6a58;
-    margin-top: 24px;
+    font-weight: normal;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #d96c9d;
+    margin-bottom: 50px;
 }
 
-footer a {
-    color: #a67c52;
-    text-decoration: underline;
+h2 {
+    font-weight: normal;
+    color: #c94f7c;
+    margin-top: 50px;
+    position: relative;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 16px 8px;
+h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ffc0d9;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.05em;
+}
+
+.soft {
+    font-style: italic;
+    color: #a85d79;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #ffe6f0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+    background-color: #ffd6eb;
+}
+
+.signature {
+    margin-top: 60px;
+    text-align: right;
+    font-style: italic;
+    color: #b04a72;
+}
+
+/* Subtle fade-in animation */
+
+.container {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
     }
-    h1 {
-        font-size: 2em;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
